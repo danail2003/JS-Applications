@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles/style.css">
+  <title>MyBlog</title>
+  <script src="./node_modules/firebase/firebase.js"></script>
+  <script src="./node_modules/jquery/dist/jquery.js"></script>
+  <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+  <script src="./node_modules/sammy/lib/sammy.js"></script>
+  <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+  <script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyAwh5tlEkf937C-a_bO_21cV-IwKaOW_xY",
+      authDomain: "posts-78fb8.firebaseapp.com",
+      databaseURL: "https://posts-78fb8.firebaseio.com",
+      projectId: "posts-78fb8",
+      storageBucket: "posts-78fb8.appspot.com",
+      messagingSenderId: "198863929193",
+      appId: "1:198863929193:web:8f945abde13de3660307f8"
+    };
+    firebase.initializeApp(firebaseConfig);
+  </script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-firestore.js"></script>
+  <script src="./scripts/app.js" type="module"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>

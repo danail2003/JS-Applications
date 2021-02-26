@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Destinations</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="./node_modules/firebase/firebase.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.js"></script>
+    <script src="./node_modules/handlebars/dist/handlebars.js"></script>
+    <script src="./node_modules/sammy/lib/sammy.js"></script>
+    <script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyDReCpDM-bTP48CUfKO18nyTiFaReuihxM",
+            authDomain: "destinations-fcbc2.firebaseapp.com",
+            projectId: "destinations-fcbc2",
+            storageBucket: "destinations-fcbc2.appspot.com",
+            messagingSenderId: "140183373303",
+            appId: "1:140183373303:web:b85dff8e961df7dcf59af2"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.1.2/firebase-firestore.js"></script>
+    <script src="./scripts/app.js" type="module"></script>
+</head>
+
+<body>
+    <div>
+        <div class="notification loadingBox" id="loadingBox">
+            Loading …
+        </div>
+        <div class="notification infoBox" id="infoBox">
+            Info
+        </div>
+        <div class="notification errorBox" id="errorBox">
+            Error: destination name can't be empty!
+        </div>
+    </div>
+    <div id="container"></div>
+</body>
+</html>
