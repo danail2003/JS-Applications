@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body id="root"></body>
+<script src="/node_modules/jquery/dist/jquery.js"></script>
+<script src="/node_modules/handlebars/dist/handlebars.js"></script>
+<script src="/node_modules/sammy/lib/sammy.js"></script>
+<script src="/node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.1.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.10.0/firebase-firestore.js"></script>
+<script>
+    var firebaseConfig = {
+        apiKey: "AIzaSyAFBCy_fZXWv9Lm4nHRMGkeyCHsQx78NxI",
+        authDomain: "articles-de5ca.firebaseapp.com",
+        databaseURL: "https://articles-de5ca.firebaseio.com",
+        projectId: "articles-de5ca",
+        storageBucket: "articles-de5ca.appspot.com",
+        messagingSenderId: "1058496549114",
+        appId: "1:1058496549114:web:ab52d5c2de2b85b472b943"
+    };
+    firebase.initializeApp(firebaseConfig);
+</script>
+<script src="./app.js" type="module"></script>
+
+</html>
